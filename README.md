@@ -2,9 +2,9 @@
 
 Dockerfile to create a docker image that includes tools and middlewares for development with Go.
 
-## Dockerhub
+## Docker Hub
 
-* https://hub.docker.com/r/pankona/godev-docker/
+* https://hub.docker.com/r/pankona/godev/
 
 ## Author
 
