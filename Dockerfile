@@ -1,4 +1,4 @@
-FROM golang:1.11
+FROM golang:1.11.2
 
 RUN apt-get -q update --fix-missing
 
