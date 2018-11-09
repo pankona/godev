@@ -1,4 +1,4 @@
-# godev-docker
+# godev
 
 Dockerfile to create a docker image that includes tools and middlewares for development with Go.
 
