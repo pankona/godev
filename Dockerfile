@@ -19,3 +19,5 @@ RUN curl -L https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
 
 # enable sticky bit on GOPATH to allow installing tools by go get
 RUN chmod o+u -R /go
+
+RUN apt-get -y install bzip2
