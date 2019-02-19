@@ -17,10 +17,10 @@ RUN go get -u github.com/haya14busa/reviewdog/cmd/reviewdog
 # Install dep
 RUN curl -L https://raw.githubusercontent.com/golang/dep/master/install.sh | sh 
 
-# enable sticky bit on GOPATH to allow installing tools by go get
-RUN chmod o+u -R /go
-
 RUN apt-get -y install bzip2
 
 # golangci-lint
 RUN curl -sfL https://install.goreleaser.com/github.com/golangci/golangci-lint.sh | sh -s -- -b $GOPATH/bin v1.12
+
+# enable sticky bit on GOPATH to allow installing tools by go get
+RUN chmod o+u -R /go
