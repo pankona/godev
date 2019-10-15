@@ -20,7 +20,7 @@ RUN curl -L https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
 RUN apt-get -y install bzip2
 
 # golangci-lint
-RUN curl -sfL https://install.goreleaser.com/github.com/golangci/golangci-lint.sh | sh -s -- -b $GOPATH/bin v1.17.1
+RUN curl -sfL https://install.goreleaser.com/github.com/golangci/golangci-lint.sh | sh -s -- -b $GOPATH/bin v1.20.0
 
 # enable sticky bit on GOPATH to allow installing tools by go get
 RUN chmod o+u -R /go
